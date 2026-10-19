@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf3ff">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <title>Entrar | Hospital Infantil Aurora</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <main class="login-layout">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <p class="eyebrow">Hospital Infantil Aurora</p>
+      <h1 id="welcome-title">Cuidado atento, em cada etapa.</h1>
+      <p class="welcome-copy">Acesso ao ambiente de trabalho das equipes assistenciais e administrativas.</p>
+      <div class="welcome-note"><span class="status-dot"></span> Sistema interno de atendimento</div>
+    </section>
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="brand-mark" aria-hidden="true"><img src="../assets/favicon.svg" alt=""></div>
+      <p class="eyebrow">Acesso profissional</p>
+      <h2 id="login-title">Entrar no sistema</h2>
+      <p class="muted intro">Use suas credenciais institucionais.</p>
+      <form class="form-stack">
+        <label for="email">E-mail institucional</label>
+        <input id="email" name="email" type="email" autocomplete="username" placeholder="nome@hospital.com.br" required>
+        <label for="password">Senha</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+        <label for="role">Perfil de acesso</label>
+        <select id="role" name="role" required>
+          <option value="" selected disabled>Selecione seu perfil</option>
+          <option>Medicina</option><option>Enfermagem</option><option>Recepção</option><option>Administração</option>
+        </select>
+        <button class="button button-primary" type="submit">Acessar</button>
+      </form>
+      <nav class="registration-links" aria-label="Cadastros">
+        <a class="button button-primary" href="../03-cadastro-paciente/index.html">Cadastro do paciente</a>
+        <a class="button button-primary" href="../08-painel-medico/index.html">Painel médico</a>
+      </nav>
+      <p class="footnote">Ambiente destinado a profissionais autorizados.</p>
+    </section>
+  </main>
+</body>
+</html>

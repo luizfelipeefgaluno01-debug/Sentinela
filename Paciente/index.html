@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf3ff"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><title>Cadastro de paciente | Hospital Infantil Aurora</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header"><div><a class="hospital-brand" href="../02-login/index.html"><img src="../assets/favicon.svg" alt=""><span>Hospital Infantil Aurora</span></a><p class="eyebrow">Cadastro • Atendimento</p><h1>Novo paciente</h1><p class="subtitle">Identificação da criança, responsável e contatos.</p></div><a class="text-link" href="../02-login/index.html">Sair</a></header>
+    <form class="form-layout">
+      <section class="form-section"><div class="section-heading"><span class="step">01</span><div><h2>Dados da criança</h2><p>Informações para identificação clínica.</p></div></div>
+        <div class="fields"><label>Nome completo<input name="patient-name" autocomplete="name" required></label><label>Nome social<input name="social-name"></label><label>Data de nascimento<input name="birth-date" type="date" required></label><label>Sexo registrado<select name="sex"><option value="">Selecione</option><option>Feminino</option><option>Masculino</option><option>Não informado</option></select></label><label>CPF<input name="cpf" inputmode="numeric"></label><label>Cartão SUS<input name="sus" inputmode="numeric"></label><label>Tipo sanguíneo<select name="blood-type"><option>Não informado</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></label><label>Convênio<input name="insurance"></label><label class="span-2">Alergias conhecidas<textarea name="allergies" rows="2" placeholder="Descreva ou informe 'não conhecidas'"></textarea></label><label class="span-2">Condições relevantes<textarea name="conditions" rows="2" placeholder="Condições previamente informadas pelo responsável"></textarea></label></div>
+      </section>
+      <section class="form-section"><div class="section-heading"><span class="step step-pink">02</span><div><h2>Responsável legal</h2><p>Pessoa de referência para contato e decisões.</p></div></div>
+        <div class="fields"><label>Nome completo<input name="guardian-name" required></label><label>Vínculo com a criança<select name="relationship"><option value="">Selecione</option><option>Mãe</option><option>Pai</option><option>Responsável legal</option><option>Outro</option></select></label><label>Telefone principal<input name="phone" type="tel" autocomplete="tel" required></label><label>E-mail<input name="guardian-email" type="email" autocomplete="email"></label><label class="span-2">Contato alternativo<input name="alternate-contact" type="tel"></label></div>
+      </section>
+      <section class="form-section"><div class="section-heading"><span class="step">03</span><div><h2>Endereço</h2><p>Localização para cadastro e contato.</p></div></div>
+        <div class="fields"><label>CEP<input name="postal-code" inputmode="numeric" autocomplete="postal-code"></label><label>Estado<input name="state" autocomplete="address-level1"></label><label class="span-2">Logradouro<input name="street" autocomplete="street-address"></label><label>Número<input name="number"></label><label>Complemento<input name="complement"></label><label>Bairro<input name="district"></label><label>Cidade<input name="city" autocomplete="address-level2"></label></div>
+      </section>
+      <div class="form-actions"><button class="button button-secondary" type="reset">Limpar</button><a class="button button-primary" href="../07-guiche/index.html">Salvar cadastro</a></div>
+    </form>
+  </main>
+</body>
+</html>

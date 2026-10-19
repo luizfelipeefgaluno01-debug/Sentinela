@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf3ff">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <title>Painel médico | Hospital Infantil Aurora</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="Hospital Infantil Aurora, painel médico">
+        <img class="brand-symbol" src="../assets/favicon.svg" alt="">
+        <span><strong>Hospital Aurora</strong><small>Assistência pediátrica</small></span>
+      </a>
+      <p class="nav-label">ÁREA MÉDICA</p>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio" aria-current="page"><span class="nav-icon">01</span>Painel médico</a>
+        <a class="nav-link" href="../03-cadastro-paciente/index.html"><span class="nav-icon">04</span>Pacientes</a>
+        <a class="nav-link" href="../04-cadastro-funcionario/index.html"><span class="nav-icon">RH</span>Funcionários</a>
+      </nav>
+      <p class="nav-label nav-label-spaced">ATENDIMENTO</p>
+      <nav class="main-nav" aria-label="Atalhos de atendimento">
+        <a class="nav-link" href="../05-triagem-pediatrica/index.html"><span class="nav-icon">05</span>Triagem</a>
+        <a class="nav-link" href="../06-prescricao-medica/index.html"><span class="nav-icon">06</span>Prescrição</a>
+        <a class="nav-link" href="../07-guiche/index.html"><span class="nav-icon">07</span>Painel do guichê</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="avatar">MD</span>
+        <span><strong>Equipe médica</strong><small>Unidade pediátrica</small></span>
+        <a href="../02-login/index.html" aria-label="Sair do sistema" class="logout">↗</a>
+      </div>
+    </aside>
+
+    <main class="main-content" id="inicio">
+      <header class="topbar">
+        <div class="breadcrumb">Hospital Aurora <span>/</span> Área médica</div>
+        <div class="topbar-meta"><span class="shift-indicator"><i></i> Plantão demonstrativo</span><a class="profile-link" href="../02-login/index.html">Sair</a></div>
+      </header>
+
+      <section class="page-intro">
+        <div><p class="eyebrow">SEGUNDA-FEIRA · TURNO DA MANHÃ</p><h1>Painel médico</h1><p class="intro-copy">Visão geral da fila e dos registros deste turno.</p></div>
+        <a class="button button-black" href="../05-triagem-pediatrica/index.html">Iniciar atendimento <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="metric-row" aria-label="Resumo do turno">
+        <article class="metric metric-blue"><div class="metric-heading"><span>AGUARDANDO</span><span class="metric-marker">01</span></div><strong>08</strong><small>na fila clínica</small></article>
+        <article class="metric metric-pink"><div class="metric-heading"><span>EM ATENDIMENTO</span><span class="metric-marker">02</span></div><strong>03</strong><small>consultas em andamento</small></article>
+        <article class="metric metric-neutral"><div class="metric-heading"><span>CONCLUÍDOS</span><span class="metric-marker">03</span></div><strong>12</strong><small>neste turno</small></article>
+        <article class="metric metric-alert"><div class="metric-heading"><span>PENDÊNCIAS</span><span class="metric-marker">04</span></div><strong>02</strong><small>registros para revisar</small></article>
+      </section>
+
+      <section class="work-grid">
+        <section class="work-section queue-section" id="fila" aria-labelledby="queue-title">
+          <header class="section-header"><div><p class="eyebrow">ACOMPANHAMENTO</p><h2 id="queue-title">Fila clínica</h2></div><a class="quiet-link" href="../05-triagem-pediatrica/index.html">Abrir triagem <span aria-hidden="true">→</span></a></header>
+          <div class="filter-bar"><label class="search-field"><span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar por paciente ou prontuário" aria-label="Buscar por paciente ou prontuário"></label><label class="filter-select"><span class="sr-only">Filtrar fila</span><select aria-label="Filtrar fila"><option>Todos os status</option><option>Aguardando</option><option>Em atendimento</option><option>Reavaliação</option></select></label></div>
+          <div class="table-scroll"><table class="queue-table"><thead><tr><th>Paciente</th><th>Idade</th><th>Prioridade</th><th>Chegada</th><th>Status</th><th><span class="sr-only">Ações</span></th></tr></thead><tbody>
+            <tr><td><strong>Paciente demonstrativo 01</strong><small>Prontuário · 000184</small></td><td>2 a 4 m</td><td><span class="priority priority-pink"><i></i>Urgente</span></td><td>08:42</td><td><span class="status status-waiting">Aguardando</span></td><td><a class="row-action" href="../05-triagem-pediatrica/index.html">Abrir</a></td></tr>
+            <tr><td><strong>Paciente demonstrativo 02</strong><small>Prontuário · 000185</small></td><td>7 a 1 m</td><td><span class="priority priority-blue"><i></i>Pouco urgente</span></td><td>08:49</td><td><span class="status status-active">Em atendimento</span></td><td><a class="row-action" href="../06-prescricao-medica/index.html">Abrir</a></td></tr>
+            <tr><td><strong>Paciente demonstrativo 03</strong><small>Prontuário · 000186</small></td><td>11 a 0 m</td><td><span class="priority priority-blue"><i></i>Não urgente</span></td><td>09:03</td><td><span class="status status-waiting">Aguardando</span></td><td><a class="row-action" href="../05-triagem-pediatrica/index.html">Abrir</a></td></tr>
+            <tr><td><strong>Paciente demonstrativo 04</strong><small>Prontuário · 000187</small></td><td>5 a 8 m</td><td><span class="priority priority-pink"><i></i>Muito urgente</span></td><td>09:08</td><td><span class="status status-review">Reavaliação</span></td><td><a class="row-action" href="../06-prescricao-medica/index.html">Abrir</a></td></tr>
+          </tbody></table></div>
+          <footer class="table-footer"><span>Exibindo 4 de 8 registros demonstrativos</span><a href="../03-cadastro-paciente/index.html">Cadastrar paciente <span aria-hidden="true">→</span></a></footer>
+        </section>
+
+        <aside class="side-column">
+          <section class="work-section schedule-section" id="agenda" aria-labelledby="schedule-title">
+            <header class="section-header"><div><p class="eyebrow">HOJE · 19 OUT</p><h2 id="schedule-title">Agenda do turno</h2></div><span class="calendar-date">19<strong>OUT</strong></span></header>
+            <ol class="schedule-list">
+              <li class="schedule-item"><time>09:30</time><span class="schedule-line"></span><div><strong>Consulta pediátrica</strong><small>Paciente demonstrativo 05 · Retorno</small></div></li>
+              <li class="schedule-item"><time>10:15</time><span class="schedule-line pink-line"></span><div><strong>Avaliação clínica</strong><small>Paciente demonstrativo 06 · Primeira consulta</small></div></li>
+              <li class="schedule-item"><time>11:00</time><span class="schedule-line"></span><div><strong>Reavaliação</strong><small>Paciente demonstrativo 07</small></div></li>
+            </ol>
+            <a class="schedule-link" href="#agenda">Ver agenda completa <span aria-hidden="true">→</span></a>
+          </section>
+          <section class="work-section notes-section" aria-labelledby="notes-title">
+            <header class="section-header"><div><p class="eyebrow">ATENÇÃO</p><h2 id="notes-title">Pendências do turno</h2></div><span class="pending-count">02</span></header>
+            <ul class="pending-list"><li><span class="pending-symbol">!</span><span><strong>Revisar registros clínicos</strong><small>2 prontuários aguardam conferência</small></span></li><li><span class="pending-symbol pending-blue">i</span><span><strong>Confirmar dados cadastrais</strong><small>1 responsável com contato incompleto</small></span></li></ul>
+          </section>
+        </aside>
+      </section>
+      <footer class="page-footer"><span>Hospital Infantil Aurora</span><span>Dados demonstrativos · Interface sem integração clínica</span></footer>
+    </main>
+  </div>
+</body>
+</html>
